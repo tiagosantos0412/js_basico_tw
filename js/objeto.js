@@ -23,4 +23,12 @@ var aluno = {
 
 }
 
+var myObj = {
+    length: 15,
+    color: 'yellow',
+    write: function() {
+        console.log('Hello')
+    }
+}
+
 console.log(aluno.condicao())
