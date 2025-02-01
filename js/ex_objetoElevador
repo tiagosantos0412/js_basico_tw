@@ -1,0 +1,22 @@
+var elevador = {
+    andar: 0,
+    subir: function() {
+        if (this.andar < 3) { // Permite subir até o andar 3
+            this.andar += 1;
+        }
+        console.log(`Andar ${this.andar}`);
+    },
+    descer: function() {
+        if (this.andar > 0) { // Permite descer até o andar 0
+            this.andar -= 1;
+        }
+        console.log(`Andar ${this.andar}`);
+    }
+};
+
+elevador.subir(); // Andar 1
+elevador.subir(); // Andar 2
+elevador.subir(); // Andar 3
+elevador.descer(); // Andar 2
+elevador.descer(); // Andar 1
+elevador.descer(); // Andar 0
