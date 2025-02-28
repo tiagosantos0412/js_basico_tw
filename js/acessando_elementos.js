@@ -39,3 +39,29 @@ document.querySelector('.subtitulo').innerHTML = '<em><h3>Seção 1</h3></em>';
 //alterando o elemento html
 console.log(document.querySelector('.footer').outerHTML);
 
+//removendo elementos
+document.querySelector('.footer').remove();
+
+//criando elementos
+var tagFooter = document.createElement('p');
+console.log(tagFooter);
+
+tagFooter.innerText = '2025 Prática de Acesso a Elementos';
+console.log(tagFooter);
+
+//inserindo o elemento criado em uma tag
+document.querySelector('footer').appendChild(tagFooter);
+
+//manipulando e alterando os valores
+var tagEnviar = document.getElementById('enviar').value;
+console.log(tagEnviar);
+tagEnviar = 'Submeter';
+console.log(tagEnviar);
+
+document.getElementById('enviar').value = tagEnviar;
+
+//alterando o tipo do atributo
+var tagAtrb = document.querySelector('#email').getAttribute('type');
+console.log(tagAtrb);
+tagAtrb = 'radio';
+document.querySelector('#email').setAttribute('type', tagAtrb);
